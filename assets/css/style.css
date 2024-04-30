@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -14,10 +15,39 @@ body{
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    display: inline-block;
+    background-color: #ffff;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+ .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #026fb8
+}
+
 /* ESTILO HEADER */
 
 header{
-    padding: 40px 4%;
+    padding: 30px 4% 0px;
+    background-color: #F4E87C;
+}
+
+header img {
+    vertical-align: middle;
+    position: absolute; /* Adicionando posição absoluta */
+    top: 20px; /* Distância do topo */
+    left: 20px; /* Distância da esquerda */
+    width: 5vw;
+    height: 10vh;
 }
 
 header > .interface{
@@ -26,5 +56,65 @@ header > .interface{
     justify-content: space-between;
 }
 
+header a{
+    color:#1e1e1e;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
 
+header a:hover{
+    color: #777676;
+    transform: scale(1.05);
+}
 
+header nav ul{
+    list-style-type: disc;
+}
+
+header nav ul li{
+    display: inline;
+    padding:  0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.top{
+    padding: 40px 4%;
+}
+
+section.top .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top h1{
+    color: #ffff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.top h1 span{
+    color: #004777;
+
+}
+
+.top .txt-do-site p{
+    color: #ffff;
+    margin: 40px 0px;
+}
+
+.top .img-do-site{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate ;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
